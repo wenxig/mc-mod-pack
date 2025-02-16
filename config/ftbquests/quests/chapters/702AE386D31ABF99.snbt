@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "702AE386D31ABF99"
+	group: "3743A7ECCC0380F7"
+	icon: "create:goggles"
+	id: "702AE386D31ABF99"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "机霸动力"
+}

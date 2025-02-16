@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2015",
+    "types": [
+      "./probe/generated/globals.d.ts",
+      "./probe/generated/events.d.ts",
+      "./src/extents.d.ts"
+    ],
+    "lib": [
+      "ES5",
+      "ES2015"
+    ],
+    
+  },
+  "include": [
+    "./src/**/*",
+    "./src/*",
+    "./probe/generated/**/*"
+  ]
+}

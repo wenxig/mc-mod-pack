@@ -1,0 +1,22 @@
+{
+  "name": "$6凛冰奇点",
+  "colors": [
+    "#11aaff",
+    "#70aaff"
+  ],
+  "materialCount": 1000,
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/bronze",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "kubejs:ice_core"
+  },
+  "enable": true
+}

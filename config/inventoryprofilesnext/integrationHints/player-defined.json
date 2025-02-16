@@ -1,0 +1,32 @@
+{
+    "com.blakebr0.extendedcrafting.client.screen.UltimateAutoTableScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "top": 14
+            },
+            "SORT": {
+                "top": 14
+            },
+            "SORT_COLUMNS": {
+                "top": 14
+            },
+            "SORT_ROWS": {
+                "top": 14
+            },
+            "SETTINGS": {
+                "top": 7
+            }
+        }
+    },
+    "igentuman.nc.client.gui.fission.FissionControllerScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 1,
+                "bottom": 13
+            },
+            "SETTINGS": {
+                "top": -25
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "kubejs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:c": "bun build ./src/client_scripts/**/*.mts --outdir=./client_scripts --watch",
+    "dev:s": "bun build ./src/startup_scripts/**/*.mts --outdir=./startup_scripts --watch",
+    "dev": "bun build ./src/server_scripts/**/*.mts --outdir=./server_scripts --watch",
+    "diff":"bun ./diff.ts"
+  },
+  "keywords": [],
+  "author": "wenxig",
+  "license": "ISC"
+}

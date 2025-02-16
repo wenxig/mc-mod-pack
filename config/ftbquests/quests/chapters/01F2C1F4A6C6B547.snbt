@@ -1,0 +1,498 @@
+{
+	autofocus_id: "74F39EB5C5C83B11"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "01F2C1F4A6C6B547"
+	group: "3743A7ECCC0380F7"
+	icon: "minecraft:crafting_table"
+	id: "01F2C1F4A6C6B547"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "602E688E90C4D321"
+			rewards: [{
+				id: "3EF6FBEB24864970"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "这只是确保你知道有任务这个东西"
+			tasks: [{
+				id: "5A88E05A58C6EA12"
+				title: "欢迎"
+				type: "checkmark"
+			}]
+			title: "欢迎"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["602E688E90C4D321"]
+			id: "74F39EB5C5C83B11"
+			subtitle: "打制石器"
+			tasks: [{
+				count: 5L
+				id: "2DB3782522AA4C70"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:rock_knapping"
+					}
+				}
+				title: "Any #tfc:rock_knapping"
+				type: "item"
+			}]
+			title: "旧石器时代"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["602E688E90C4D321"]
+			id: "491985463F6B497F"
+			tasks: [{
+				count: 18L
+				id: "01FAE316221EE6CE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:fallen_leaves"
+					}
+				}
+				title: "Any #tfc:fallen_leaves"
+				type: "item"
+			}]
+			title: "树yee"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["491985463F6B497F"]
+			id: "507322C8ADE1C90C"
+			tasks: [{
+				count: 3L
+				id: "24F82FB436350F20"
+				item: { Count: 3, id: "tfc_stone_tools:plant_string" }
+				type: "item"
+			}]
+			title: "纤维绳"
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74F39EB5C5C83B11"]
+			description: ["以石击石而"]
+			id: "659757806EAD1630"
+			subtitle: "新石器时代"
+			tasks: [{
+				count: 2L
+				id: "0F806F00A4776FE2"
+				item: { Count: 2, id: "tfc:stone/axe_head/sedimentary" }
+				type: "item"
+			}]
+			title: "\"福头\""
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["659757806EAD1630"]
+			id: "16391ED069B065DB"
+			tasks: [{
+				id: "6E15CF38E3E52F4F"
+				item: "tfc:stone/knife_head/sedimentary"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23FDD9E89EDCB80E"]
+			id: "251F363A4BB65E45"
+			tasks: [{
+				id: "40EB185A727A9B37"
+				item: {
+					Count: 1
+					id: "tfc:stone/axe/sedimentary"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"16391ED069B065DB"
+				"507322C8ADE1C90C"
+			]
+			id: "058D760ECAF15E3F"
+			tasks: [{
+				id: "0CBD3F4B7FEADE4C"
+				item: {
+					Count: 1
+					id: "tfc:stone/knife/sedimentary"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["058D760ECAF15E3F"]
+			id: "23FDD9E89EDCB80E"
+			tasks: [{
+				count: 9L
+				id: "790B1C403088E850"
+				item: {
+					Count: 3
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:stick"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["251F363A4BB65E45"]
+			description: ["用斧头挖树的最下一节，树会直接连锁哦"]
+			id: "6FF3547F40358946"
+			subtitle: "每个mc玩家必须保护好的三样东西之一"
+			tasks: [{
+				count: 2L
+				id: "47A43D914DC1EC91"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "firmalife:oven_fuel"
+					}
+				}
+				title: "Any #firmalife:oven_fuel"
+				type: "item"
+			}]
+			title: "要致富"
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6FF3547F40358946"
+				"5A1F2E971EB82A03"
+			]
+			id: "78E268AF7F666D38"
+			tasks: [{
+				advancement: "tfc:story/firepit"
+				criterion: ""
+				id: "0FB76C20AF2B4A75"
+				type: "advancement"
+			}]
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["23FDD9E89EDCB80E"]
+			id: "5A1F2E971EB82A03"
+			tasks: [{
+				id: "269DE159B1E89A4F"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["78E268AF7F666D38"]
+			id: "573E497E4E8D5FEC"
+			tasks: [{
+				count: 2L
+				id: "4B962934310841DF"
+				item: { Count: 2, id: "tfc:torch" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["602E688E90C4D321"]
+			description: ["挖掘含粘土的泥土自动掉落哦"]
+			id: "71AACE97E2CEF4A4"
+			tasks: [{
+				count: 3L
+				id: "265393D34B92E0C7"
+				item: { Count: 3, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71AACE97E2CEF4A4"]
+			id: "1C236CC31681BA3E"
+			tasks: [{
+				id: "745B754EC96368DC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_saw_blade_mold"
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["602E688E90C4D321"]
+			id: "4DD5DE1C32447B40"
+			tasks: [{
+				id: "1A84673BBD0A486D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:seeds"
+					}
+				}
+				title: "Any #tfc:seeds"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4DD5DE1C32447B40"
+				"058D760ECAF15E3F"
+			]
+			id: "67DE1C20C07EF545"
+			tasks: [{
+				count: 8L
+				id: "3F822E8B3E483CB2"
+				item: { Count: 8, id: "tfc:straw" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"67DE1C20C07EF545"
+				"1C236CC31681BA3E"
+				"6FF3547F40358946"
+				"573E497E4E8D5FEC"
+			]
+			id: "0CD48EAB38049BE8"
+			tasks: [{
+				advancement: "tfc:story/pit_kiln"
+				criterion: ""
+				id: "18CD2CE6EA3B69A7"
+				type: "advancement"
+			}]
+			x: -10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0CD48EAB38049BE8"]
+			id: "47775D9445B26FBC"
+			tasks: [{
+				id: "2339F15D3EE6D955"
+				item: "tfc:pan/empty"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"47775D9445B26FBC"
+				"71C0EFAA4B1345F1"
+			]
+			id: "2B5034E9D70D6DF3"
+			tasks: [{
+				id: "1F15D8D4E71C3938"
+				item: "exnihilosequentia:flint_mesh"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6FF3547F40358946"]
+			id: "71C0EFAA4B1345F1"
+			subtitle: "假作真时真亦假，无为有处有还无"
+			tasks: [{
+				id: "37571289BEB8E7C3"
+				item: "exnihilosequentia:oak_sieve"
+				type: "item"
+			}]
+			title: "无中生有"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B5034E9D70D6DF3"]
+			id: "3F2D5CE284677424"
+			tasks: [{
+				count: 20L
+				id: "673EEC00867CC686"
+				item: {
+					Count: 20
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ore/small_native_copper"
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"3F2D5CE284677424"
+				"1C236CC31681BA3E"
+				"0CD48EAB38049BE8"
+				"5EC31FCE328DC141"
+			]
+			id: "014DAD734C2D0821"
+			tasks: [{
+				id: "5D6D6F860AA267B9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/saw_blade/copper"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"014DAD734C2D0821"
+				"23FDD9E89EDCB80E"
+			]
+			id: "1A05D021E3D90398"
+			tasks: [{
+				id: "64BF53F59F84FD5B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/saw/copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"1A05D021E3D90398"
+				"6FF3547F40358946"
+			]
+			id: "04BA6A5F75639A71"
+			shape: "pentagon"
+			size: 2.5d
+			subtitle: "每个mc玩家必须保护好的三样东西之一"
+			tasks: [{
+				id: "65B11C868D3EB110"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:workbenches"
+					}
+				}
+				title: "Any #tfc:workbenches"
+				type: "item"
+			}]
+			x: -8.75d
+			y: 13.75d
+		}
+		{
+			dependencies: ["71AACE97E2CEF4A4"]
+			id: "5EC31FCE328DC141"
+			tasks: [{
+				id: "0E04EB2104303FA3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_vessel"
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			id: "0531FB173E849859"
+			tasks: [
+				{
+					id: "095BAE9CE0291F35"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "13FFA6B8BD4A15D6"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 6.0d
+		}
+	]
+	title: "新世界"
+}
