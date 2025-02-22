@@ -1,9 +1,0 @@
-{
-	chapter_groups: [
-		{ id: "3743A7ECCC0380F7", title: "原始人" }
-		{ id: "744E1CF571B4F722", title: "近现代" }
-		{ id: "619D1572BD495A86", title: "现代" }
-		{ id: "547E0DBCB93BC0B2", title: "未来" }
-		{ id: "72F84A12B46EE48E", title: "时间之外" }
-	]
-}

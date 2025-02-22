@@ -1,7 +1,0 @@
-
-[Entity]
-	#Enable star entity explosion.
-	enableStarExplosion = true
-	#when 12.15, UOM's max health will be set to 4936
-	enableSpecialUOM = true
-
